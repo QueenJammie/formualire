@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription en ligne</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Formulaire d'inscription en ligne</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#identification">Identification</a></li>
+                <li><a href="#informations">Informations</a></li>
+                <li><a href="#message">Message</a></li>
+            </ul>
+        </nav>
+        <form action="./index.html" method="POST" enctype="application/x-www-form-urlencoded" name="inscription">
+            <fieldset id="identification">
+                <legend>Identification</legend>
+                <p>
+                    <label for="identifiants">
+                        Identifiants: 
+                    </label>
+                    <input type="text" name="identifiants" id="identifiants" required autocomplete="name" />
+                </p>
+                <br />
+                <p>
+                    <label for="password">
+                        Mot de passe: 
+                    </label>
+                    <input type="password" name="password" id="password" required />
+                </p>
+            </fieldset>
+            <br />
+            <fieldset id="informations">
+                <legend>Informations</legend>
+                <p>
+                    <label for="email">
+                        Adresse de messagerie: 
+                    </label>
+                    <input type="email" name="email" id="email" pattern="email" autocomplete="email" />
+                </p>
+                <br />
+                <p>
+                    <label for="tel">
+                        Téléphone: 
+                    </label>
+                    <input type="tel" name="tel" id="tel" pattern="tel" />
+                </p>
+                <br />
+                <p>
+                    <label for="age">
+                        Âge: 
+                    </label>
+                    <input type="number" name="age" id="age" />
+                </p>
+                <br />
+                <p>
+                    Genre: <br />
+                    Homme: <input type="radio" name="sexe" id="homme" value="H" /><br />
+                    Femme: <input type="radio" name="sexe" id="femme" value="F" /><br />
+                    Non binaire: <input type="radio" name="sexe" id="non_binary" value="NB" />
+                </p>
+                <br />
+                <p>
+                    <label for="file">
+                        Fichier à partager: 
+                    </label>
+                    <input type="file" name="file" id="file" />
+                </p>
+                <br />
+                <p>
+                    <label for="color">
+                        Thème favori: 
+                    </label>
+                    <input type="color" name="color" id="color" />
+                </p>
+            </fieldset>
+            <br />
+            <fieldset id="message">
+                <legend>Message</legend>
+                <textarea name="demande" id="demande" cols="100" rows="10" style="padding: 1em;" placeholder="Votre message ici 👈" required ></textarea>
+                <input type="reset" value="Recommencer" style="margin: 1em;" />
+                <br />
+                <span>Urgence: </span>
+                <select name="urgence" id="urgence">
+                    <option value="Très urgent">Très urgent</option>
+                    <option value="Urgent">Urgent</option>
+                    <option value="Moyenne">Moyenne</option>
+                    <option value="Nulle">Nulle</option>
+                </select>
+            </fieldset>
+            <span>Date du jour: </span>
+            <input type="date" name="date" id="date" /><br /><br />
+            <input type="submit" value="Valider l'envoi du document" />
+        </form>
+        <section>
+            <h2>Adds</h2>
+            <article>
+                <h2>They NEVER saw it coming! 😮</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mcHoAaUmLAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article>
+                <h2>The first and last lines from every major character</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FgVwAuK0KnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article>
+                <h2>Glee - Cool kids</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FM1DrxVknI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article>
+                <h2>Glee - Rather be</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4fOMYxHiL9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article>
+                <h2>Adam Lambert - Marry the night</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BIT4pQu-xxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
